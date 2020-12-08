@@ -3,13 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Useless</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Useless n' stuff</title>
   </head>
   <body>
-    <button type="button">
-      <p>Click me!</p>
-    </button>
+    <div class="container">
+      <button class="button-troll">
+        <img
+          src="images/trollface_PNG13.png"
+          alt="trollimg"
+          onclick="window.open(this.src)"
+          role="button"
+          tabindex="0"
+          height="80"
+          width="80"
+        />
+      </button>
+      <button class="change-background">Change background</button>
+      <button class="button-message">Message</button>
+      <!--Working-->
+      <button id="clickme">Click me: 0</button>
+    </div>
 
     <script src="/thescript.js"></script>
   </body>
