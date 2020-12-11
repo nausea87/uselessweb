@@ -23,24 +23,31 @@ button.onclick = function() {
 };
 
 
-// RANDOM SHIT
-function random_item(items)
-{
-  return items[Math.floor(Math.random()*items.length)];
-}
-var items = [254, 45, 212, 365, 2543];
-console.log(random_item(items));
-
-
 
 
 
 
 //-------CHANGE BACKGROUND--------------
-function myFunction() {
+function changeBackground() {
   document.body.style.background = 
-  "#1f030d";
-  //  url('assets/images/troll.png') no-repeat center";
+  "#3f3f3f";
+  
   
 }
 
+var x = document.getElementById("clickme");
+x.addEventListener("mouseover", myFunction);
+x.addEventListener("click", mySecondFunction);
+x.addEventListener("mouseout", myThirdFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML += "Moused over!<br>";
+}
+
+function mySecondFunction() {
+  document.getElementById("demo").innerHTML += "Clicked!<br>";
+}
+
+function myThirdFunction() {
+  document.getElementById("demo").innerHTML += "Moused out!<br>";
+}

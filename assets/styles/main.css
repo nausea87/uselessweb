@@ -1,12 +1,13 @@
 body {
-  background: rgb(131, 58, 180);
+  /* background: rgb(131, 58, 180);
   background: linear-gradient(
     185deg,
     rgba(131, 58, 180, 1) 0%,
     rgba(253, 62, 62, 1) 0%,
     rgba(29, 175, 253, 0.80015756302521) 100%,
     rgba(251, 251, 251, 1) 100%
-  );
+  ); */
+  background-color: rgb(212, 193, 193);
   font-family: "Inter", sans-serif;
   margin: 0;
 }
@@ -14,22 +15,20 @@ body {
 #header {
   display: flex;
   justify-content: center;
-  background-color: #1f030d; /* Grey background */
-  padding: 5px 5px; /* Some padding */
+  background-color: #1f030d;
   color: white;
-  font-size: 50px; /* Big font size */
-  font-weight: bold;
-  position: fixed; /* Fixed position - sit on top of the page */
+  font-size: 18px;
+  position: fixed;
   top: 0;
-  width: 100%; /* Full width */
-  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  width: 100%;
+  transition: 0.2s;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 300px;
   max-width: 100%;
 }
 
@@ -40,10 +39,17 @@ button {
   background-color: rgb(213, 231, 204);
 }
 
+h1 {
+  font-size: 68px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
 button:hover {
-  transform: scale(
-    1.2
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.2);
 }
 
 @media only screen and (max-width: 980px) {

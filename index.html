@@ -3,46 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./assets/styles/main.css" />
     <title>Useless n' stuff</title>
   </head>
-  <body onkeypress="keyPressAlert()">
-    <!-- Key#1 -->
+  <body id="body" onkeypress="keyPress()">
+    <h1 class="header">
+      <img src="./assets/images/troll.png" height="50" width="50" />
+      currywürst
+      <img src="./assets/images/troll.png" height="50" width="50" />
+    </h1>
+    <h2>Click any key...</h2>
 
-    <div id="header">piskfinne</div>
-    <div class="container">
-      <button onclick="myFunction()">
-        Set background
-        <button onclick="gun()">Play Audio</button>
-        <button onclick="bat()">Play Audio</button>
-        <button onclick="planks()">Play Audio</button>
-      </button>
-      <button class="button-troll">
-        <img
-          src="/assets/images/troll.png"
-          alt="trollimg"
-          onclick="window.open(this.src)"
-          role="button"
-          tabindex="0"
-          height="80"
-          width="80"
-        />
-      </button>
-      <button class="change-background">Change background</button>
+    <main class="container">
+      <!-- <button class="gun" onclick="gun()"></button>
+      <button class="bat" onclick="bat()"></button>
+      <button class="planks" onclick="planks()"></button> -->
+      <button class="changeBg" onclick="changeBackground()">Change Bg</button>
       <button class="button-message">Message</button>
-      <!-- Clicker#1 -->
       <button id="clickme">Click me: 0</button>
-      <!-- Clicker#2 -->
-    </div>
+      <p id="demo"></p>
+    </main>
 
-    <script src="./assets/js/clicker.js"></script>
-    <script src="./assets/js/keypresser.js"></script>
-    <script src="./assets/js/scroller.js"></script>
-    <script src="./assets/js/sounds.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
