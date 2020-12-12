@@ -7,21 +7,9 @@ body {
     rgba(29, 175, 253, 0.80015756302521) 100%,
     rgba(251, 251, 251, 1) 100%
   ); */
-  background-color: rgb(212, 193, 193);
+  background-color: rgb(174, 221, 182);
   font-family: "Inter", sans-serif;
   margin: 0;
-}
-
-#header {
-  display: flex;
-  justify-content: center;
-  background-color: #1f030d;
-  color: white;
-  font-size: 18px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: 0.2s;
 }
 
 .container {
@@ -33,15 +21,18 @@ body {
 }
 
 button {
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   margin: 10px;
-  border-radius: 10%;
+  border: solid 3px;
+  border-radius: 3rem;
+  outline: none;
   background-color: rgb(213, 231, 204);
 }
 
 button:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  box-shadow: 0 0 0 2px black;
 }
 
 h1 {
@@ -53,12 +44,16 @@ h2 {
   text-align: center;
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 800px) {
   h1 {
-    font-size: 45px;
+    font-size: 32px;
   }
   h1 img {
     height: 50px;
     width: 50px;
+  }
+
+  button {
+    height: 6rem;
   }
 }

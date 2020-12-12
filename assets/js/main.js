@@ -9,7 +9,7 @@ const keyPress = () =>  {
     const audio = new Audio('/assets/carrey.mp3');
     audio.play();
   
-  }
+  };
 
 
 let button = document.getElementById("clickme"),
@@ -17,6 +17,7 @@ count = 0;
   button.onclick = () => {
   count += 1;
   button.innerHTML = "Click me: " + count;
+  // Doesn't work on mobile
 
   if(count == 5) {
     const audio = new Audio('/assets/gunfire.mp3');
@@ -33,27 +34,27 @@ count = 0;
     audio.play();   
   }
   
-  if(count == 15) {
+  if(count == 20) {
     const audio = new Audio('/assets/paper.mp3');
     audio.play();   
   }
 
-  if(count == 15) {
+  if(count == 25) {
     const audio = new Audio('/assets/rattle.mp3');
     audio.play();   
   }
 
-  if(count == 15) {
+  if(count == 30) {
     const audio = new Audio('/assets/slapping.mp3');
     audio.play();   
   }
 
-  if(count == 15) {
+  if(count == 35) {
     const audio = new Audio('/assets/drill.mp3');
     audio.play();   
   }
 
-  if(count == 15) {
+  if(count == 40 ) {
     const audio = new Audio('/assets/buzz.mp3');
     audio.play();   
   }
@@ -62,9 +63,13 @@ count = 0;
 };
 
 changeBackground = () => {
-    document.body.style.background = 
-    "#3f3f3f"
+    // document.body.style.background = 
+    // "#3f3f3f"
+
+    location.href = 
+    "https://www.youtube.com/watch?v=x-KDhYjgMlY&ab_channel=Nippe";
 };
+
 
 // const mouseOver = document.getElementById("body");
 // mouseOver.addEventListener("mouseover", mouseOverFunc);
