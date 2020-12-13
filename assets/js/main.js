@@ -19,11 +19,11 @@ document.getElementsByClassName("button-message")[0];
 //Array stuff
 const soundArray = [
   '/assets/sounds/carrey.mp3',
-  '/assets/sounds/gunfire.mp3',
-  '/assets/sounds/paper.mp3',
-  '/assets/sounds/drill.mp3',
-  '/assets/sounds/slapping.mp3',
-  '/assets/sounds/woodplanks.mp3',
+  '/assets/sounds/shl.mp3',
+  '/assets/sounds/ahole.mp3',
+  '/assets/sounds/laugh.mp3',
+  '/assets/sounds/balls.mp3',
+  '/assets/sounds/loser.mp3',
 ];
 
 //More clickety click stuff
@@ -49,29 +49,26 @@ count = 0;
   button.innerHTML = "Click me: " + count;
 
   if(count == 5) {
-    const audio = new Audio('/assets/sounds/gunfire.mp3');
+    const audio = new Audio('/assets/sounds/laugh.mp3');
     audio.play();   
   }
   if(count == 10) {
-    const audio = new Audio('/assets/sounds/woodenbat.mp3');
+    const audio = new Audio('/assets/sounds/ahole.mp3');
     audio.play();   
   }
   if(count == 15) {
-    const audio = new Audio('/assets/sounds/woodplanks.mp3');
+    const audio = new Audio('/assets/sounds/shl.mp3');
     audio.play();   
   }
   if(count == 20) {
-    const audio = new Audio('/assets/sounds/paper.mp3');
+    const audio = new Audio('/assets/sounds/loser.mp3');
     audio.play();   
   }
   if(count == 25) {
-    const audio = new Audio('/assets/sounds/rattle.mp3');
+    const audio = new Audio('/assets/sounds/balls.mp3');
     audio.play();   
   }
-  if(count == 30) {
-    const audio = new Audio('/assets/sounds/slapping.mp3');
-    audio.play();   
-  }
+ 
 };
 
 const ladyCurry = () => {
@@ -81,6 +78,11 @@ const ladyCurry = () => {
     location.href = 
     "https://www.youtube.com/watch?v=x-KDhYjgMlY&ab_channel=Nippe";
 };
+
+
+
+
+// Hall of Shame stuff?
 
 
 // const mouseOver = document.getElementById("body");
