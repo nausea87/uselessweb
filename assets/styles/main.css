@@ -1,14 +1,21 @@
+@font-face {
+  font-family: "Branda";
+  src: url("/assets/fonts/Branda.woff2") format("woff2"),
+    url("/assets/fonts/Branda.woff") format("woff");
+}
+
 body {
-  /* background: rgb(131, 58, 180);
+  background: rgb(131, 58, 180);
   background: linear-gradient(
     185deg,
     rgba(131, 58, 180, 1) 0%,
     rgba(253, 62, 62, 1) 0%,
     rgba(29, 175, 253, 0.80015756302521) 100%,
     rgba(251, 251, 251, 1) 100%
-  ); */
-  background-color: rgb(174, 221, 182);
-  font-family: "Inter", sans-serif;
+  );
+  /* background-color: rgb(174, 221, 182); */
+  font-family: "branda";
+  height: 100vh;
   margin: 0;
 }
 
@@ -16,7 +23,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
   max-width: 100%;
 }
 

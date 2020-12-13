@@ -4,19 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="shortcut icon" href="#" />
+    <!--Just favicon.ico bug fix-->
     <title>jimcurry</title>
   </head>
-  <body id="body" onkeyup="keyPress()">
+  <body id="body" onkeypress="annoyance()">
     <h1 class="header">
-      <img src="./assets/images/troll.png" height="150" width="150" />
+      <img
+        onmouseover="bigImg(this)"
+        onmouseout="normalImg(this)"
+        src="./assets/images/troll.png"
+        height="150"
+        width="150"
+      />
       jimcurrywürst
-      <img src="./assets/images/troll.png" height="150" width="150" />
+      <img
+        onmouseover="bigImg(this)"
+        onmouseout="normalImg(this)"
+        src="./assets/images/troll.png"
+        height="150"
+        width="150"
+      />
     </h1>
     <h2>Click any key...</h2>
+
     <main class="container">
-      <button class="changeBg" onclick="changeBackground()">Change Bg</button>
+      <button class="gaga" onclick="ladyCurry()">lady curry</button>
       <button class="button-message">Message</button>
-      <button id="clickme">Click me: 0</button>
+      <button id="counter">Click me: 0</button>
       <p id="demo"></p>
     </main>
 

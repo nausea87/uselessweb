@@ -1,68 +1,80 @@
+//Click stuff
 const pressedButton =
 document.getElementsByClassName("button-message")[0];
    pressedButton.addEventListener("click", () => {
       alert("Am I working?")
    });
 
-const keyPress = () =>  {
-    // alert("You pressed a key...cool yo");
-    const audio = new Audio('/assets/carrey.mp3');
-    audio.play();
+//Hover stuff
+  const bigImg = (x) => {
+    x.style.height = "300px";
+    x.style.width = "300px";
+  }
   
+  const normalImg = (x) => {
+    x.style.height = "150px";
+    x.style.width = "150px";
+  }
+
+//Array stuff
+const soundArray = [
+  '/assets/sounds/carrey.mp3',
+  '/assets/sounds/gunfire.mp3',
+  '/assets/sounds/paper.mp3',
+  '/assets/sounds/drill.mp3',
+  '/assets/sounds/slapping.mp3',
+  '/assets/sounds/woodplanks.mp3',
+];
+
+//More clickety click stuff
+document.querySelector('body').addEventListener("click",
+() => {
+  let audio = new Audio(soundArray[Math.floor(Math.random() * soundArray.length)]);
+  audio.volume = 0.2;
+  audio.play();
+})
+
+//Key press stufff
+const annoyance = () =>  {
+  const audio = new Audio('/assets/sounds/carrey.mp3');
+  audio.volume = 0.4;
+  audio.play();
   };
 
-
-let button = document.getElementById("clickme"),
+ //Counter stuff with sounds 
+let button = document.getElementById("counter"),
 count = 0;
   button.onclick = () => {
   count += 1;
   button.innerHTML = "Click me: " + count;
-  // Doesn't work on mobile
 
   if(count == 5) {
-    const audio = new Audio('/assets/gunfire.mp3');
+    const audio = new Audio('/assets/sounds/gunfire.mp3');
     audio.play();   
   }
-  
   if(count == 10) {
-    const audio = new Audio('/assets/woodenbat.mp3');
+    const audio = new Audio('/assets/sounds/woodenbat.mp3');
     audio.play();   
   }
-  
   if(count == 15) {
-    const audio = new Audio('/assets/woodplanks.mp3');
+    const audio = new Audio('/assets/sounds/woodplanks.mp3');
     audio.play();   
   }
-  
   if(count == 20) {
-    const audio = new Audio('/assets/paper.mp3');
+    const audio = new Audio('/assets/sounds/paper.mp3');
     audio.play();   
   }
-
   if(count == 25) {
-    const audio = new Audio('/assets/rattle.mp3');
+    const audio = new Audio('/assets/sounds/rattle.mp3');
     audio.play();   
   }
-
   if(count == 30) {
-    const audio = new Audio('/assets/slapping.mp3');
+    const audio = new Audio('/assets/sounds/slapping.mp3');
     audio.play();   
   }
-
-  if(count == 35) {
-    const audio = new Audio('/assets/drill.mp3');
-    audio.play();   
-  }
-
-  if(count == 40 ) {
-    const audio = new Audio('/assets/buzz.mp3');
-    audio.play();   
-  }
-
-
 };
 
-changeBackground = () => {
+const ladyCurry = () => {
     // document.body.style.background = 
     // "#3f3f3f"
 
