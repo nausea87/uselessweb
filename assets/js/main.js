@@ -37,7 +37,7 @@ document.querySelector('img').addEventListener("click",
 //Key press stufff
 const annoyance = () =>  {
   const audio = new Audio('/assets/sounds/carrey.mp3');
-  audio.volume = 0.4;
+  audio.volume = 0.8;
   audio.play();
   }
 
@@ -68,15 +68,50 @@ count = 0;
     const audio = new Audio('/assets/sounds/balls.mp3');
     audio.play();   
   }
- 
-}
+ }
 
 const ladyCurry = () => {
     location.href = 
     "https://www.youtube.com/watch?v=x-KDhYjgMlY&ab_channel=Nippe";
 }
 
+
+
 // Hall of Shame stuff?
+
+// function test() {
+//   document.getElementById("video").innerHTML = "<div id='player'></div>";
+//   const tag = document.createElement('script');
+//   tag.src = "https://www.youtube.com/iframe_api";
+//   const firstScriptTag = document.getElementsByTagName('script')[0];
+//   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// }
+// var player;
+// function onYouTubeIframeAPIReady() {
+//   player = new YT.Player('player', {
+//       height: '195',
+//       width: '100%',
+//       videoId: 'x-KDhYjgMlY',
+//       events: {
+//           'onReady': onPlayerReady,
+//           'onStateChange': onPlayerStateChange
+//       }
+//   });
+// }
+
+// function onPlayerReady(event) {
+//   event.target.playVideo();
+// }
+
+// var done = false;
+// function onPlayerStateChange(event) {
+//   if (event.data == YT.PlayerState.PLAYING && !done) {
+//      done = true;
+//   }
+// }
+// function stopVideo() {
+//   player.stopVideo();
+// }
 
 
 // const mouseOver = document.getElementById("body");
