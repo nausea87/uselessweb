@@ -27,13 +27,14 @@ body {
 }
 
 button {
+  font-family: "Branda";
   width: 10rem;
   height: 10rem;
   margin: 10px;
   border: solid 3px;
   border-radius: 3rem;
   outline: none;
-  background-color: rgb(213, 231, 204);
+  background-color: rgb(226, 210, 221);
 }
 
 button:hover {

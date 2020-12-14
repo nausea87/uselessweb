@@ -1,8 +1,9 @@
-//Click stuff
+//Click stuff for BG-change.
 const pressedButton =
-document.getElementsByClassName("button-message")[0];
+document.getElementsByClassName("bg-change")[0];
    pressedButton.addEventListener("click", () => {
-      alert("Am I working?")
+      document.body.style.background = 
+    "#3f3f3f";
    });
 
 //Hover stuff
@@ -10,11 +11,10 @@ document.getElementsByClassName("button-message")[0];
     x.style.height = "300px";
     x.style.width = "300px";
   }
-  
   const normalImg = (x) => {
     x.style.height = "150px";
     x.style.width = "150px";
-  }
+  };
 
 //Array stuff
 const soundArray = [
@@ -24,10 +24,10 @@ const soundArray = [
   '/assets/sounds/laugh.mp3',
   '/assets/sounds/balls.mp3',
   '/assets/sounds/loser.mp3',
-];
+]
 
 //More clickety click stuff
-document.querySelector('body').addEventListener("click",
+document.querySelector('img').addEventListener("click",
 () => {
   let audio = new Audio(soundArray[Math.floor(Math.random() * soundArray.length)]);
   audio.volume = 0.2;
@@ -39,7 +39,7 @@ const annoyance = () =>  {
   const audio = new Audio('/assets/sounds/carrey.mp3');
   audio.volume = 0.4;
   audio.play();
-  };
+  }
 
  //Counter stuff with sounds 
 let button = document.getElementById("counter"),
@@ -48,39 +48,33 @@ count = 0;
   count += 1;
   button.innerHTML = "Click me: " + count;
 
-  if(count == 5) {
+  if(count == 10) {
     const audio = new Audio('/assets/sounds/laugh.mp3');
     audio.play();   
   }
-  if(count == 10) {
+  if(count == 30) {
     const audio = new Audio('/assets/sounds/ahole.mp3');
     audio.play();   
   }
-  if(count == 15) {
+  if(count == 50) {
     const audio = new Audio('/assets/sounds/shl.mp3');
     audio.play();   
   }
-  if(count == 20) {
+  if(count == 70) {
     const audio = new Audio('/assets/sounds/loser.mp3');
     audio.play();   
   }
-  if(count == 25) {
+  if(count == 90) {
     const audio = new Audio('/assets/sounds/balls.mp3');
     audio.play();   
   }
  
-};
+}
 
 const ladyCurry = () => {
-    // document.body.style.background = 
-    // "#3f3f3f"
-
     location.href = 
     "https://www.youtube.com/watch?v=x-KDhYjgMlY&ab_channel=Nippe";
-};
-
-
-
+}
 
 // Hall of Shame stuff?
 
